@@ -1,0 +1,6 @@
+{
+  "installCommand": "cd \"Technical Backend\" && npm ci",
+  "buildCommand": "cd \"Technical Backend\" && npm run build",
+  "outputDirectory": "Technical Backend/dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
