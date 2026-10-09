@@ -282,7 +282,7 @@ Three-step wizard with progress dots:
 ### 7.6 Homeowner app `/app/home`
 Layout: 12-col grid of cards.
 
-1. **Greeting row** – "Good afternoon, Laura" · address line "Rooftop 6.0 kWp · Barcelona" · health badge (`Working as expected` green / `Check your system` amber).
+1. **Greeting row** – "Good afternoon, Ramon" · address line "Rooftop 6.0 kWp · Barcelona" · health badge (`Working as expected` green / `Check your system` amber).
 2. **Today** (large card)
    - Big number: kWh produced so far today + caption "of X kWh forecast".
    - Area chart: hourly production today (sun colour, solid until "now", then forecast as dashed brand line) + expected (muted dashed).
@@ -367,7 +367,7 @@ interface DayForecast { date: string; kwh: number; weather: 'sun'|'partly'|'clou
 
 ### 8.3 Scenarios
 - **Weather (7 days):** sun, sun, partly, rain + `stormRisk` (hail Thursday 15–18h), partly, sun, sun.
-- **Household:** "Laura", 6.0 kWp, Barcelona (Sant Martí), status ok, perfRatio 0.98. Savings assume 45% self-consumption and EUR 0.20/kWh (labelled as demo assumption).
+- **Household:** "Ramon", 6.0 kWp, Barcelona (Sant Martí), status ok, perfRatio 0.98. Savings assume 45% self-consumption and EUR 0.20/kWh (labelled as demo assumption).
 - **Portfolio:** 250 sites scattered within the Barcelona metro area (lat 41.32–41.47, lng 2.05–2.25, avoid the sea: lng > 2.05 + (41.47 − lat) × 0 … simply reject points east of the coastline approximated by `lng > 2.0 + (lat − 41.3) × 1.2 + 0.18`). kWp 5–20 (skewed toward 5–10). Status mix: 88% ok, 9% underperforming, 3% offline.
 - Expected loss per alert = (expected − actual) kWh/day × EUR 0.20.
 

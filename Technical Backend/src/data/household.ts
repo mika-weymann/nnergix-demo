@@ -10,7 +10,7 @@ import { SCENARIO, dateOf, weatherOf } from './weather';
 import type { DayForecast, HourPoint } from './types';
 
 export const household = {
-  name: 'Laura',
+  name: 'Ramon',
   kWp: 6,
   district: 'Sant Martí',
   address: 'Rooftop 6.0 kWp · Barcelona',
